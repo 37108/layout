@@ -1,8 +1,9 @@
 .container {
-  min-width: 100vw;
   display: grid;
   justify-content: center;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: repeat(2, minmax(200px, 450px));
+  grid-gap: 5px;
+  min-width: 100vw;
   margin: auto;
 }
 
@@ -16,8 +17,9 @@
   width: clamp(45ch, 50%, 55ch);
   display: flex;
   flex-direction: column;
-  margin: 50px auto 50px auto;
-
+  margin: 50px auto auto auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #3d3d3d;
 }
 
 .grid-blog__title {
